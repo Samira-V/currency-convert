@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>currency convert</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+           
+            <p>Convert And Calculator</p>
+           
+
+        </div>
+        <div class="currency-convert-from">
+            <div class="currency-from">
+                <select  value="" id="currency-from-select">
+
+                </select>
+
+            </div>
+            <div class="currency-amount">
+                <span>from</span>
+                <input type="text" id="display" class="display">
+            </div>
+        </div>
+        <div class="change-icon" id="change">
+            <i class="fa fa-exchange  " aria-hidden="true"></i>
+        </div>
+        <div class="currency-convert-to">
+            <div class="currency-to">
+                <select name="" id="currency-to-select" value="">
+                </select>
+
+            </div>
+            <div class="currency-amount">
+                <span>to</span>
+                <input type="text" class="output">
+            </div>
+        </div>
+        
+        <div class="calculator">
+
+            <div class="buttons">
+                <button class="button clear" onclick="clearDisplay()">C</button>
+                <button class="button operator" onclick="appendOperation('/')">/</button>
+                <button class="button operator" onclick="appendOperation('*')">*</button>
+                <button class="button operator" onclick="appendOperation('-')">-</button>
+
+                <button class="button" onclick="appendNumber('7')">7</button>
+                <button class="button" onclick="appendNumber('8')">8</button>
+                <button class="button" onclick="appendNumber('9')">9</button>
+                <button class="button operator" onclick="appendOperation('+')">+</button>
+
+                <button class="button" onclick="appendNumber('4')">4</button>
+                <button class="button" onclick="appendNumber('5')">5</button>
+                <button class="button" onclick="appendNumber('6')">6</button>
+                <button class="button equal" onclick="calculate()">=</button>
+
+                <button class="button" onclick="appendNumber('1')">1</button>
+                <button class="button" onclick="appendNumber('2')">2</button>
+                <button class="button" onclick="appendNumber('3')">3</button>
+                <button class="button" onclick="appendNumber('0')">0</button>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
